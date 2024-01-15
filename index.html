@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="container">
       <nav class="header__menu menu">
         <div class="menu__logo">
@@ -33,16 +33,16 @@
         <div class="menu__actions">
           <ul class="menu__actions-list">
             <li class="menu__action-item">
-              <a href="" class="menu__action-link">Location</a>
+              <a class="menu__action-link" href="#location">Location</a>
             </li>
             <li class="menu__action-item">
-              <a href="" class="menu__action-link">Gallery</a>
+              <a class="menu__action-link" href="">Gallery</a>
             </li>
             <li class="menu__action-item">
-              <a href="" class="menu__action-link">About</a>
+              <a class="menu__action-link" href="">About</a>
             </li>
             <li class="menu__action-item">
-              <a href="" class="menu__action-link">Team</a>
+              <a class="menu__action-link" href="">Team</a>
             </li>
           </ul>
         </div>
@@ -57,10 +57,14 @@
   </header>
 
   <main class="main">
-    <section class="location">
+    <section id="location" class="location">
       <div class="container">
-        <h2 class="location__title">Our Location</h2>
-        <strong class="location__anchor">Top</strong>
+        <div class="location__head head">
+          <h2 class="head__title">Our Location</h2>
+          <strong class="head__anchor">
+            <a class="head__anchor-action" href="#header">Top</a>
+          </strong>
+        </div>
         <iframe class="location__map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d783.4657529907815!2d-0.5298440337794486!3d38.236304006849956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd624b94be99c89b%3A0xfd2a6b7f8e8913c3!2sLa%20Gu%C3%ADa%20Gran%20Alacant!5e0!3m2!1suk!2ses!4v1705320905578!5m2!1suk!2ses"
           width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
@@ -79,6 +83,23 @@
           Dolor saepe alias beatae, temporibus in qui minus officiis ad nihil vel exercitationem doloremque soluta earum
           veniam consequatur animi consequuntur et blanditiis cupiditate quasi quidem. Quam cum voluptas in quisquam!
         </p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__head head">
+          <h2 class="head__title">Gallery</h2>
+          <strong class="head__anchor">
+            <a class="head__anchor-action" href="#header">Top</a>
+          </strong>
+        </div>
+        <div class="gallery__wrap">
+          <img class="gallery__img 01" src="img/gallery/01.jpg" alt="space img">
+          <img class="gallery__img 02" src="img/gallery/02.jpg" alt="space img">
+          <img class="gallery__img 03" src="img/gallery/03.jpg" alt="space img">
+          <img class="gallery__img 04" src="img/gallery/04.jpg" alt="space img">
+        </div>
       </div>
     </section>
   </main>
